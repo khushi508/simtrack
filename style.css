@@ -438,3 +438,54 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; letter-spacing: -0.0
     border-bottom: 1px solid var(--line);
   }
 }
+
+
+/* ================= USER REQUESTED CHANGES ================= */
+
+/* SIMTRAK logo image */
+.brand img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+/* Services heading size */
+.services .section-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+/* Smaller service icons */
+.service-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Larger testimonials image */
+.testimonials-bg {
+  height: 600px;
+  overflow: hidden;
+}
+
+.testimonials-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Move consultation text and button closer */
+.cta-strip-inner {
+  justify-content: center;
+  gap: 35px;
+}
+
+/* Bigger CTA image */
+.cta-bg {
+  height: 600px;
+  overflow: hidden;
+}
+
+.cta-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
