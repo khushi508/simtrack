@@ -1,5 +1,4 @@
-# Northpeak Consulting — Strategy & Growth Advisory
-
+SIMTRAK
 A modern, responsive consulting website showcasing services, projects, testimonials, and pricing.
 
 ## Tech Stack
