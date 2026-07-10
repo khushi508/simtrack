@@ -45,13 +45,45 @@ function resetTimer() {
 
 if (slides.length) resetTimer();
 
-// ---------- contact form (demo only, no backend) ----------
+// ---------- contact form (connected to backend API) ----------
+const API_URL = 'http://localhost:5000/api/contact';
 const form = document.getElementById('contactForm');
 const note = document.getElementById('formNote');
+
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    note.hidden = false;
-    form.reset();
+
+    const formData = new FormData(form);
+    const payload = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message')
+    };
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    try {
+      const response = await fetch(API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) throw new Error('Request failed');
+
+      note.hidden = false;
+      note.textContent = "Thanks — we'll be in touch within one business day.";
+      form.reset();
+    } catch (err) {
+      note.hidden = false;
+      note.textContent = 'Something went wrong. Please try again in a moment.';
+      console.error(err);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+    }
   });
 }
