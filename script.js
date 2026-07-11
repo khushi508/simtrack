@@ -46,7 +46,7 @@ function resetTimer() {
 if (slides.length) resetTimer();
 
 // ---------- contact form (connected to backend API) ----------
-const API_URL = 'http://localhost:5000/api/contact';
+const API_URL = 'https://simtrack-weld.vercel.app/api/contact';
 const form = document.getElementById('contactForm');
 const note = document.getElementById('formNote');
 
