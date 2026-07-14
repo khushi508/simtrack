@@ -489,3 +489,247 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; letter-spacing: -0.0
   height: 100%;
   object-fit: cover;
 }
+@media (max-width:700px){
+
+.header-inner{
+    height:70px;
+    padding:0 20px;
+}
+
+.brand img{
+    width:110px;
+}
+
+.login-btn{
+    display:none;
+}
+
+.nav-toggle{
+    display:flex;
+}
+
+}
+/* ================= MOBILE RESPONSIVE FIX ================= */
+
+@media (max-width:700px){
+
+    /* Global spacing */
+    .wrap{
+        padding:0 18px;
+    }
+
+    .section-title{
+        margin-bottom:30px;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    .header-inner{
+        height:70px;
+    }
+
+    .brand img{
+        width:110px;
+    }
+
+    .login-btn{
+        display:none;
+    }
+
+    .nav-toggle{
+        display:flex;
+    }
+
+
+    /* Mobile navigation */
+    .main-nav.is-open{
+        top:70px;
+        padding:20px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero-media{
+        height:300px;
+    }
+
+    .hero-media img{
+        object-position:center;
+    }
+
+    .hero-card{
+        margin-top:-50px;
+        padding:25px 20px;
+        max-width:95%;
+    }
+
+    .hero-card h1{
+        font-size:2rem;
+        line-height:1.1;
+    }
+
+    .hero-sub{
+        font-size:0.9rem;
+    }
+
+    .hero-actions{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .btn{
+        padding:12px 22px;
+    }
+
+
+    /* ================= TRIO ================= */
+
+    .trio{
+        padding:60px 0;
+    }
+
+    .trio-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+
+    /* ================= ABOUT ================= */
+
+    .about{
+        padding:60px 0;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .about-media-card{
+        padding:35px 20px;
+    }
+
+    .stat-number{
+        font-size:3rem;
+    }
+
+
+    /* ================= SERVICES ================= */
+
+    .services{
+        padding:60px 0;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-card{
+        padding:30px 20px;
+    }
+
+    .service-icon{
+        width:25px;
+        height:25px;
+    }
+
+
+    /* ================= PROJECTS ================= */
+
+    .projects{
+        padding:60px 0;
+    }
+
+    .projects-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .project-card{
+        padding:25px 20px;
+    }
+
+
+    /* ================= TESTIMONIAL ================= */
+
+    .testimonials{
+        padding:60px 0;
+    }
+
+    .testimonials-bg{
+        height:300px;
+    }
+
+    .testimonial-slider{
+        min-height:230px;
+    }
+
+    .testimonial-slide{
+        font-size:1.1rem;
+    }
+
+
+    /* ================= PRICING ================= */
+
+    .pricing{
+        padding:60px 0;
+    }
+
+    .pricing-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .price-card{
+        padding:30px 20px;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .cta-bg{
+        height:300px;
+    }
+
+    .cta-strip{
+        padding:40px 0;
+    }
+
+    .cta-strip-inner{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact{
+        padding:60px 0;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .contact-form button{
+        width:100%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .site-footer{
+        padding-top:50px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+}
